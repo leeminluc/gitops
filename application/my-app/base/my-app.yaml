@@ -16,5 +16,6 @@ spec:
         namespace: my-app
   values:
     service:
-      type: LoadBalancer
-      port: 80
+      type: ClusterIP
+    ingress:
+      enabled: false
